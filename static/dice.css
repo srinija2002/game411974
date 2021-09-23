@@ -1,0 +1,71 @@
+
+body{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#main img{
+    border: 5px solid black;
+    border-radius: 5%;
+    margin-left: 45%;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(231, 173, 198);
+    padding: 10px;
+    margin-top: 0px;
+}
+.center{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(218, 159, 188);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button:active{
+    box-shadow: 2px;
+    background-color: rgb(180, 76, 137);
+}
+
+.container{
+    width: 100%;
+}
+.ib{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    width:23%;
+ 
+}
+
+.hide{
+    visibility:hidden;
+}
+#result{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+#sum{
+    visibility:hidden;
+}
+#result{
+    background-color: rgb(114, 45, 80);
+    margin-top: 30px;
+    color: white;
+}
+
+#sum1,#sum2,#sum3,#sum4{
+    font-weight: bold;
+    font-size: 30px;
+}

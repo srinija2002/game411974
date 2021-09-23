@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'game.css' %}">
+    <title>Game 411974</title>
+</head>
+<body>
+    <h1>Welcome to Game Application</h1>
+    <h2>Choose a Game</h2>
+    <div class="container">
+        <div class="images"><img src="{% static 'images/dice.jpg' %}" class="b" width="300px" height="300px" alt="Dice Game" onclick="location.href='/dice'"><div class="line">Dice Game</div></div>
+        <div class="images"><img src="{% static 'images/card.jpg' %}" class="b" width="300px" height="300px" alt="Cards Game" onclick="location.href='/cards'"><div class="line">Cards Game</div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div{
+    display: inline-block;
+    justify-content: center;
+}
+
+.line{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.images{
+
+    margin: 10px 215px;
+}
+img.b{
+    border: 5px solid black;
+    border-radius: 5%;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    background-color: rgb(231, 173, 198);
+    padding: 30px;
+    margin-top: 0px;
+}
+h2{
+    font-size: 60px;
+    text-align: center;
+}

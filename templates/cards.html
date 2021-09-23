@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cards.css' %}">
+    <script src="{% static 'cards.js' %}"></script>
+    <title>Cards Game</title>
+</head>
+<body>
+    <h1>WELCOME TO CARDS GAME</h1>
+    <div class="images" id="main"><img src="{% static 'images/card.jpg' %}" width="150px" height="150px" alt="Cards Game"></div><br>
+    <div class="center">
+        <form name="sri">
+            <div>(<strong>Note:</strong>Considered A=1,J=11,Q=12,K=13 for counting sum)</div>
+            <div><label for="players">Choose number of players :</label>
+            <select name="players" id="players">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></div><br>
+            <div><label for="turns">Choose number of cards per each player :</label>
+            <select name="turns" id="turns">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></div><br>
+            <div><button type="button" onclick="fixdata()">Start Playing</button>&nbsp;&nbsp;&nbsp;<button type="button" onclick="reload()">Play again</button></div><br>
+            <div><button type="button" onclick="roll()">Distribute cards</button></div><br>
+        </form>
+    </div>
+    <div class="container">
+        <div class="ib" id="one">
+            <br><strong><div id="p1"></div></strong><br>
+            <div id="a1"></div>
+            <div id="a2"></div>
+            <div id="a3"></div>
+            <div id="a4"></div>
+            <div><span id="sum"><strong>Sum: </strong></span><span id="sum1"></span></div>
+        </div>
+        <div class="ib" id="two">
+            <strong><div id="p2"></div></strong><br>
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="sum2"></div>
+        </div>
+        <div class="ib" id="three">
+            <strong><div id="p3"></div></strong><br>
+            <div id="c1"></div>
+            <div id="c2"></div>
+            <div id="c3"></div>
+            <div id="c4"></div>
+            <div id="sum3"></div>
+        </div>
+        <div class="ib" id="four">
+            <strong><div id="p4"></div></strong><br>
+            <div id="d1"></div>
+            <div id="d2"></div>
+            <div id="d3"></div>
+            <div id="d4"></div>
+            <div id="sum4"></div>
+        </div>
+        <div id="result">Result: </div>
+    </div>
+    
+</body>
+</html>
